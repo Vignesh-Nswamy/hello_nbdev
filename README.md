@@ -1,5 +1,5 @@
-# Welcome to nbdev
-> A tutorial to learn nbdev
+# Project name here
+> Summary description here.
 
 
 This file will become your README and also the index of your documentation.
@@ -10,15 +10,15 @@ This file will become your README and also the index of your documentation.
 
 ## How to use
 
-Working example:
+Fill me in please! Don't forget code examples:
 
 ```python
-say_hello("Random user")
+1+1
 ```
 
 
 
 
-    'Hello Random user!'
+    2
 
 

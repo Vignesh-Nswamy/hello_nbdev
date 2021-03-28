@@ -10,9 +10,12 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: hellonbdev
-      url: core.html
+      title: Scrapper
+      url: /scrapper
+    - output: web,pdf
+      title: Title
+      url: /vectorizer
     output: web
-    title: hellonbdev
+    title: search_engine
   output: web
   title: Sidebar

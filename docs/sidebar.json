@@ -1,6 +1,7 @@
 {
-  "hellonbdev": {
+  "search_engine": {
     "Overview": "/",
-    "hellonbdev": "core.html"
+    "Scrapper": "/scrapper",
+    "Title": "/vectorizer"
   }
 }
