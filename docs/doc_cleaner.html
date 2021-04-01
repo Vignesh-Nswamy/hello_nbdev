@@ -25,6 +25,22 @@ nb_path: "01_doc_cleaner.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/vignesh/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -39,7 +55,7 @@ nb_path: "01_doc_cleaner.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="clean_text" class="doc_header"><code>clean_text</code><a href="https://github.com/Vignesh-Nswamy/search_engine/tree/master/search_engine/doc_cleaner.py#L24" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clean_text</code>(<strong><code>doc_lines</code></strong>)</p>
+<h4 id="clean_text" class="doc_header"><code>clean_text</code><a href="https://github.com/Vignesh-Nswamy/search_engine/tree/master/search_engine/doc_cleaner.py#L26" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clean_text</code>(<strong><code>doc_lines</code></strong>)</p>
 </blockquote>
 <p>Removes punctuations and digits from document and returns tokens</p>
 
@@ -64,7 +80,7 @@ nb_path: "01_doc_cleaner.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="clean_tokens" class="doc_header"><code>clean_tokens</code><a href="https://github.com/Vignesh-Nswamy/search_engine/tree/master/search_engine/doc_cleaner.py#L34" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clean_tokens</code>(<strong><code>tokens</code></strong>)</p>
+<h4 id="clean_tokens" class="doc_header"><code>clean_tokens</code><a href="https://github.com/Vignesh-Nswamy/search_engine/tree/master/search_engine/doc_cleaner.py#L36" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clean_tokens</code>(<strong><code>tokens</code></strong>)</p>
 </blockquote>
 <p>Removes stopwords, tokens with length less than 3 characters and stems them
 PorterStemmer is used for stemming</p>
@@ -90,7 +106,7 @@ PorterStemmer is used for stemming</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="clean" class="doc_header"><code>clean</code><a href="https://github.com/Vignesh-Nswamy/search_engine/tree/master/search_engine/doc_cleaner.py#L45" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clean</code>(<strong><code>doc</code></strong>)</p>
+<h4 id="clean" class="doc_header"><code>clean</code><a href="https://github.com/Vignesh-Nswamy/search_engine/tree/master/search_engine/doc_cleaner.py#L47" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>clean</code>(<strong><code>doc</code></strong>)</p>
 </blockquote>
 <p>Cleans a document by removing punctuations, digits, stopwords, tokens shorter than 3 characters</p>
 

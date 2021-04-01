@@ -10,6 +10,8 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from string import punctuation, digits
 
+nltk.download('stopwords')
+
 # Cell
 #export
 remove_puncts = lambda lines: lines.translate(str.maketrans(punctuation,' '*len(punctuation)))

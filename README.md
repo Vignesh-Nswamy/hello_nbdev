@@ -15,7 +15,6 @@ This project requires the following libraries
 - pandas
 - sklearn
 - nltk
-- beautiful_soup
 - beautifulsoup4
 - urllib
 
