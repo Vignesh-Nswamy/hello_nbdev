@@ -2,6 +2,9 @@
   "search_engine": {
     "Overview": "/",
     "Scrapper": "/scrapper",
-    "Title": "/vectorizer"
+    "Doc Cleaner": "/doc_cleaner",
+    "Crawler": "/crawler",
+    "Vectorizer": "/vectorizer",
+    "Ranker": "/ranker"
   }
 }

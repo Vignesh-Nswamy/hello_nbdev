@@ -6,9 +6,27 @@ index = {"get_html_content": "00_scrapper.ipynb",
          "filter_tags": "00_scrapper.ipynb",
          "get_text_content": "00_scrapper.ipynb",
          "get_linked_urls": "00_scrapper.ipynb",
-         "parse_webpage": "00_scrapper.ipynb"}
+         "parse_webpage": "00_scrapper.ipynb",
+         "remove_puncts": "01_doc_cleaner.ipynb",
+         "remove_digits": "01_doc_cleaner.ipynb",
+         "stemmer": "01_doc_cleaner.ipynb",
+         "stop_words": "01_doc_cleaner.ipynb",
+         "filter_by_length": "01_doc_cleaner.ipynb",
+         "clean_text": "01_doc_cleaner.ipynb",
+         "clean_tokens": "01_doc_cleaner.ipynb",
+         "clean": "01_doc_cleaner.ipynb",
+         "link_filter": "03_crawler.ipynb",
+         "link_modifier": "03_crawler.ipynb",
+         "crawl": "03_crawler.ipynb",
+         "compute_tfidf": "04_vectorizer.ipynb",
+         "invert_graph": "05_ranker.ipynb",
+         "rank_pages": "05_ranker.ipynb"}
 
-modules = ["scrapper.py"]
+modules = ["scrapper.py",
+           "doc_cleaner.py",
+           "crawler.py",
+           "vectorizer.py",
+           "ranker.py"]
 
 doc_url = "https://Vignesh-Nswamy.github.io/search_engine/"
 

@@ -13,8 +13,17 @@ entries:
       title: Scrapper
       url: /scrapper
     - output: web,pdf
-      title: Title
+      title: Doc Cleaner
+      url: /doc_cleaner
+    - output: web,pdf
+      title: Crawler
+      url: /crawler
+    - output: web,pdf
+      title: Vectorizer
       url: /vectorizer
+    - output: web,pdf
+      title: Ranker
+      url: /ranker
     output: web
     title: search_engine
   output: web

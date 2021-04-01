@@ -1,12 +1,12 @@
 ---
 
-title: Project name here
+title: Web Crawler
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Summary description here."
-description: "Summary description here."
+summary: "Crawls a domain and stores crawl data for quick query searches"
+description: "Crawls a domain and stores crawl data for quick query searches"
 nb_path: "index.ipynb"
 ---
 <!--
@@ -30,70 +30,158 @@ nb_path: "index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This file will become your README and also the index of your documentation.</p>
+<h2 id="Install-(Optional)">Install (Optional)<a class="anchor-link" href="#Install-(Optional)"> </a></h2><p>The package can be installed using pip as below</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install your_project_name</code></p>
+<p><code>pip install -e .</code></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use"> </a></h2>
+<h2 id="Dependencies">Dependencies<a class="anchor-link" href="#Dependencies"> </a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Fill me in please! Don't forget code examples:</p>
+<p>This project requires the following libraries</p>
+<ul>
+<li>numpy</li>
+<li>pandas</li>
+<li>sklearn</li>
+<li>nltk</li>
+<li>beautiful_soup</li>
+<li>beautifulsoup4</li>
+<li>urllib</li>
+</ul>
+<blockquote><p>If you installed the package, there is no need to separately install the packages</p>
+</blockquote>
 
 </div>
 </div>
 </div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Usage">Usage<a class="anchor-link" href="#Usage"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Crawling-Webpages">Crawling Webpages<a class="anchor-link" href="#Crawling-Webpages"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before we can start searching, the domain we wish to query has to be crawled and stored. To do that, <a href="/search_engine/crawler#crawl.py"><code>crawl.py</code></a> is executed.</p>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To know how to use <a href="/search_engine/crawler#crawl.py"><code>crawl.py</code></a>, execute <a href="/search_engine/crawler#crawl.py -h"><code>crawl.py -h</code></a></p>
+<div class="highlight"><pre><span></span>usage: crawl.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-d <span class="o">[</span>DOMAIN<span class="o">]]</span> <span class="o">[</span>-s <span class="o">[</span>SEED<span class="o">]]</span> <span class="o">[</span>-n <span class="o">[</span>NUM_PAGES<span class="o">]]</span>
+
+Web crawler
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -d <span class="o">[</span>DOMAIN<span class="o">]</span>, --domain <span class="o">[</span>DOMAIN<span class="o">]</span>
+                        Domain to crawl
+  -s <span class="o">[</span>SEED<span class="o">]</span>, --seed <span class="o">[</span>SEED<span class="o">]</span>
+                        Seed URL to start crawling from
+  -n <span class="o">[</span>NUM_PAGES<span class="o">]</span>, --num_pages <span class="o">[</span>NUM_PAGES<span class="o">]</span>
+                        Number of pages to crawl
 </pre></div>
 
-    </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
 </div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's an example...</p>
+<div class="highlight"><pre><span></span>crawl.py -d uic.edu -s https://cs.uic.edu -n <span class="m">3000</span>
+</pre></div>
+<p>This will crawl <code>3000</code> webpages from the domain <code>uic.edu</code> starting from <code>https://cs.uic.edu</code></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Searching-crawled-domains">Searching crawled domains<a class="anchor-link" href="#Searching-crawled-domains"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now that we have some webpages crawled and stored for a domain (say, <code>uic.edu</code>), we can query that domain to return search results using <code>search.py</code></p>
 
 </div>
-    {% endraw %}
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To know how to use <code>search.py</code>, execute <code>search.py -h</code></p>
+<div class="highlight"><pre><span></span>usage: search.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-d <span class="o">[</span>DOMAIN<span class="o">]]</span> <span class="o">[</span>-q QUERY<span class="o">]</span> <span class="o">[</span>-n <span class="o">[</span>NUM_RESULTS<span class="o">]]</span>
 
+Search web pages
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -d <span class="o">[</span>DOMAIN<span class="o">]</span>, --domain <span class="o">[</span>DOMAIN<span class="o">]</span>
+                        Domain to search in
+  -q QUERY, --query QUERY
+                        Query to search a given domain
+  -n <span class="o">[</span>NUM_RESULTS<span class="o">]</span>, --num_results <span class="o">[</span>NUM_RESULTS<span class="o">]</span>
+                        Number of results to show
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's an example...</p>
+<div class="highlight"><pre><span></span>search.py -d uic.edu -q library -n <span class="m">10</span>
+</pre></div>
+<p>This will return <code>10</code> relevant results to query term <code>q</code> from the domain <code>uic.edu</code></p>
+<div class="highlight"><pre><span></span>https://library.uic.edu/using-the-library
+https://library.uic.edu/help/search?t%5B0%5D<span class="o">=</span><span class="m">18</span>
+https://library.uic.edu/help/search?t%5B0%5D<span class="o">=</span><span class="m">21</span>
+https://library.uic.edu/help/search?l%5B0%5D<span class="o">=</span><span class="m">391</span>
+https://library.uic.edu/help/search?t<span class="o">[]=</span><span class="m">18</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">20</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">21</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">26</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">29</span><span class="p">&amp;;</span>
+https://library.uic.edu/help/search?t<span class="o">[]=</span><span class="m">17</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">24</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">208</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">390</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">388</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">389</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">391</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">386</span>
+https://library.uic.edu/help/search?t<span class="o">[]=</span><span class="m">19</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">48</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">21</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">386</span>
+https://library.uic.edu/help/search?t<span class="o">[]=</span><span class="m">18</span><span class="p">&amp;</span>t<span class="o">[]=</span><span class="m">23</span><span class="p">&amp;</span>l<span class="o">[]=</span><span class="m">386</span>
+https://library.uic.edu/help/search?q<span class="o">=</span><span class="p">&amp;</span>t%5B%5D<span class="o">=</span><span class="m">18</span>
+https://library.uic.edu/help/search?q<span class="o">=</span><span class="p">&amp;</span>t%5B%5D<span class="o">=</span><span class="m">21</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="More-Details">More Details<a class="anchor-link" href="#More-Details"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For more details about this package, please visit <a href="https://vignesh-nswamy.github.io/search_engine/">https://vignesh-nswamy.github.io/search_engine/</a></p>
+
+</div>
+</div>
+</div>
 </div>
  
 
