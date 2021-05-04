@@ -2,7 +2,7 @@ topnav:
 - title: Topnav
   items:
     - title: github
-      external_url: https://github.com/Vignesh-Nswamy/hellonbdev/tree/master/
+      external_url: https://github.com/Vignesh-Nswamy/search_engine/tree/master/
 
 #Topnav dropdowns
 topnav_dropdowns:

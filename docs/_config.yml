@@ -1,9 +1,9 @@
-repository: Vignesh-Nswamy/hellonbdev
+repository: Vignesh-Nswamy/search_engine
 output: web
-topnav_title: hellonbdev
-site_title: hellonbdev
-company_name: fast.ai, Inc
-description: An nbdev tutorial
+topnav_title: search_engine
+site_title: search_engine
+company_name: VigneshNarayanaswamy
+description: Search engine
 # Set to false to disable KaTeX math
 use_math: true
 # Add Google analytics id if you have one and want to use it here

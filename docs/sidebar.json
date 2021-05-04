@@ -1,10 +1,10 @@
 {
   "search_engine": {
     "Overview": "/",
-    "Scrapper": "/scrapper",
-    "Doc Cleaner": "/doc_cleaner",
-    "Crawler": "/crawler",
-    "Vectorizer": "/vectorizer",
-    "Ranker": "/ranker"
+    "Scrapper": "scrapper.html",
+    "Doc Cleaner": "doc_cleaner.html",
+    "Crawler": "crawler.html",
+    "Vectorizer": "vectorizer.html",
+    "Ranker": "ranker.html"
   }
 }

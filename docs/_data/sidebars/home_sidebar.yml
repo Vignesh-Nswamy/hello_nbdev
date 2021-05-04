@@ -11,19 +11,19 @@ entries:
       url: /
     - output: web,pdf
       title: Scrapper
-      url: /scrapper
+      url: scrapper.html
     - output: web,pdf
       title: Doc Cleaner
-      url: /doc_cleaner
+      url: doc_cleaner.html
     - output: web,pdf
       title: Crawler
-      url: /crawler
+      url: crawler.html
     - output: web,pdf
       title: Vectorizer
-      url: /vectorizer
+      url: vectorizer.html
     - output: web,pdf
       title: Ranker
-      url: /ranker
+      url: ranker.html
     output: web
     title: search_engine
   output: web
