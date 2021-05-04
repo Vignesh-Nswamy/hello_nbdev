@@ -130,6 +130,12 @@ optional arguments:
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Using-CLI">Using CLI<a class="anchor-link" href="#Using-CLI"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>To know how to use <code>search.py</code>, execute <code>search.py -h</code></p>
 <div class="highlight"><pre><span></span>usage: search.py <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-d <span class="o">[</span>DOMAIN<span class="o">]]</span> <span class="o">[</span>-q QUERY<span class="o">]</span> <span class="o">[</span>-n <span class="o">[</span>NUM_RESULTS<span class="o">]]</span>
 
@@ -138,7 +144,7 @@ Search web pages
 optional arguments:
   -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
   -d <span class="o">[</span>DOMAIN<span class="o">]</span>, --domain <span class="o">[</span>DOMAIN<span class="o">]</span>
-                        Domain to search in
+                        Domain to search <span class="k">in</span>
   -q QUERY, --query QUERY
                         Query to search a given domain
   -n <span class="o">[</span>NUM_RESULTS<span class="o">]</span>, --num_results <span class="o">[</span>NUM_RESULTS<span class="o">]</span>
@@ -165,6 +171,28 @@ https://library.uic.edu/help/search?t<span class="o">[]=</span><span class="m">1
 https://library.uic.edu/help/search?q<span class="o">=</span><span class="p">&amp;</span>t%5B%5D<span class="o">=</span><span class="m">18</span>
 https://library.uic.edu/help/search?q<span class="o">=</span><span class="p">&amp;</span>t%5B%5D<span class="o">=</span><span class="m">21</span>
 </pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Using-GUI">Using GUI<a class="anchor-link" href="#Using-GUI"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Execute <code>search_gui.py</code> for searching domains using a Graphical User Inteface. <br/>
+On execution of <code>python search_gui.py</code> you will be greeted with a rather unimpressive GUI.</p>
+<ul>
+<li>The query must be entered in the search box on top.</li>
+<li>The <code>Search</code> button retrieves relavant pages.</li>
+<li>The <code>Clear</code> button clears results.</li>
+<li>The <code>Next</code> button displays the next 10 results.</li>
+<li>The <code>Previous</code> button displays the previous 10 results.</li>
+</ul>
+<p>{% include image.html file="/search_engine/docs/images/search.gif" %}</p>
 
 </div>
 </div>

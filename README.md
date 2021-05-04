@@ -54,6 +54,8 @@ This will crawl `3000` webpages from the domain `uic.edu` starting from `https:/
 
 Now that we have some webpages crawled and stored for a domain (say, `uic.edu`), we can query that domain to return search results using `search.py`
 
+#### Using CLI
+
 To know how to use `search.py`, execute `search.py -h`
 
 ```bash
@@ -90,6 +92,18 @@ https://library.uic.edu/help/search?t[]=18&t[]=23&l[]=386
 https://library.uic.edu/help/search?q=&t%5B%5D=18
 https://library.uic.edu/help/search?q=&t%5B%5D=21
 ```
+
+#### Using GUI
+
+Execute `search_gui.py` for searching domains using a Graphical User Inteface. <br/>
+On execution of `python search_gui.py` you will be greeted with a rather unimpressive GUI.
+- The query must be entered in the search box on top.
+- The `Search` button retrieves relavant pages.
+- The `Clear` button clears results.
+- The `Next` button displays the next 10 results.
+- The `Previous` button displays the previous 10 results.
+
+<img src="nbs/docs/images/search.gif">
 
 ## More Details
 
