@@ -10,7 +10,7 @@ The package can be installed using pip as below
 
 ## Dependencies
 
-This project requires the following libraries
+This project requires the following dependencies
 - numpy
 - pandas
 - sklearn
@@ -18,7 +18,7 @@ This project requires the following libraries
 - beautifulsoup4
 - urllib
 
-> If you installed the package, there is no need to separately install the packages
+> If you installed the package, there is no need to separately install the dependencies
 
 ## Usage
 
