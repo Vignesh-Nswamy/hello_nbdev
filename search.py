@@ -24,8 +24,7 @@ def retrieve_results(query, domain='uic.edu'):
     urls, ranks = crawl_data['url'], crawl_data['rank']
 
     results = [(urls[i], sim_vectors[i][0], ranks[i]) for i in range(len(crawl_data))]
-    print(results)
-    results.sort(key=lambda x: x[1], reverse=True)
+    results.sort(key=lambda x: (x[1], x[2]), reverse=True)
 
     return results
 
